@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-wrapper">
+      <header class="header">
+        <nav class="header-nav">
+          <a href="index.html">
+            <img src="img/logo.svg" width="160" height="65" alt="Логотип дизайн студии «Нердс»">
+          </a>
+          <ul class="header-menu">
+            <li><a href="#">СТУДИЯ</a></li>
+            <li><a href="#">КЛИЕНТЫ</a></li>
+            <li><a class="catalog-active" href="catalog.html">МАГАЗИН</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+        <ul class="header-list">
+          <li class="basket"><a href="#">КОРЗИНА</a></li>
+        </ul>
+      </header>
+      <main>
+        <h1 class="header-catalog">Магазин готовых шаблонов</h1>
+    </div>
+    <h2 class="visually-hidden">Каталог</h2>
+    <form class="form" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-item">
+        <legend>Сетка</legend>
+        <ul class="filter-list">
+          <li>
+            <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+            <label for="filter-adaptive">Адаптивная</label>
+          </li>
+          <li>
+            <input type="radio" name="grid" value="Fixed" id="filter-Fixed">
+            <label for="filter-Fixed">Фиксированная</label>
+          </li>
+          <li>
+            <input type="radio" name="grid" value="rubber" id="filter-rubber">
+            <label for="filter-rubber">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="filter-item">
+        <legend>ОСОБЕННОСТИ:</legend>
+        <ul class="filter-list">
+          <li>
+            <input type="checkbox" name="slider" id="filter-slider" checked>
+            <label for="filter-slider">Слайдер</label>
+          </li>
+          <li>
+            <input type="checkbox" name="benefits-block" id="filter-benefits-block">
+            <label for="filter-benefits-block">Блок преимуществ</label>
+          </li>
+          <li>
+            <input type="checkbox" name="news" id="filter-news" checked>
+            <label for="filter-news">Новости</label>
+          </li>
+          <li>
+            <input type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">Галерея</label>
+          </li>
+          <li>
+            <input type="checkbox" name="basket" id="filter-basket">
+            <label for="filter-basket">Корзина</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="filter-button" type="submit">Показать</button>
+    </form>
+    <section class="catalog">
+      <h2 class="visually-hidden">Сортировка коталога</h2>
+      <ul class="sorting-item">
+        <li class="sorting-heading">СОРТИРОВАТЬ:</li>
+        <li class="sorting-active">По цене</li>
+        <li class="sorting-not-active">По типу</li>
+        <li class="sorting-not-active">По названию</li>
+      </ul>
+      <ul class="catalog-item">
+        <li><img src="img/catalog-sedona.jpg" width="360" height="576"
+            alt="Демонстрация сайта «Седона» с пейзажами гор, коньенов и домов"></li>
+        <li><img src="img/catalog-pink.jpg" width="360" height="576"
+            alt="Демонстрация приложения «Пинк» розового цвета на темном фоне и обзор приложения на смартфоне"></li>
+        </li>
+        <li><img src="img/catalog-barbershop.jpg" width="360" height="576"
+            alt="Демонстрация барбершопа «Бородинский» темного цвета с ценами и статистикой"></li>
+        </li>
+        <li><img src="img/catalog-mishka.jpg" width="360" height="576"
+            alt="Демонстрация сайта «Мишка» с мягкими и разноцветными игрушками на белом фоне"></li>
+        </li>
+        <li><img src="img/catalog-aplus.jpg" width="360" height="576"
+            alt="Демонстрация онлайн-школы «Аплус» с основной информацией об обучении и синем фоном"></li>
+        </li>
+        <li><img src="img/catalog-kvast.jpg" width="360" height="576"
+            alt="Демонстрация сайта «Квас» с примерами кваса и пшеничным фоном"></li>
+        </li>
+      </ul>
+    </section>
+
+    </main>
+  </div>
+</body>
