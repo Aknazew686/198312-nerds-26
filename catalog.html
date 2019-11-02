@@ -10,8 +10,9 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="header-wrapper">
+  <div class="header-wrapper">
+
+    <div class="container">
       <header class="header">
         <nav class="header-nav">
           <a href="index.html">
@@ -28,102 +29,172 @@
           <li class="basket"><a href="#">КОРЗИНА</a></li>
         </ul>
       </header>
-      <main>
-        <h1 class="header-catalog">Магазин готовых шаблонов</h1>
-    </div>
-    <h2 class="visually-hidden">Каталог</h2>
-    <form class="form" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset class="filter-item">
-        <legend>Стоимость:</legend>
-        <div class="range-filter">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
-          </div>
-          <div class="price-controls">
-            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-          </div>
-        </div>
-      </fieldset>
-    </form>
-    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset class="filter-item">
-        <legend>Сетка</legend>
-        <ul class="filter-list">
-          <li>
-            <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-            <label for="filter-adaptive">Адаптивная</label>
-          </li>
-          <li>
-            <input type="radio" name="grid" value="Fixed" id="filter-Fixed">
-            <label for="filter-Fixed">Фиксированная</label>
-          </li>
-          <li>
-            <input type="radio" name="grid" value="rubber" id="filter-rubber">
-            <label for="filter-rubber">Резиновая</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="filter-item">
-        <legend>ОСОБЕННОСТИ:</legend>
-        <ul class="filter-list">
-          <li>
-            <input type="checkbox" name="slider" id="filter-slider" checked>
-            <label for="filter-slider">Слайдер</label>
-          </li>
-          <li>
-            <input type="checkbox" name="benefits-block" id="filter-benefits-block">
-            <label for="filter-benefits-block">Блок преимуществ</label>
-          </li>
-          <li>
-            <input type="checkbox" name="news" id="filter-news" checked>
-            <label for="filter-news">Новости</label>
-          </li>
-          <li>
-            <input type="checkbox" name="gallery" id="filter-gallery">
-            <label for="filter-gallery">Галерея</label>
-          </li>
-          <li>
-            <input type="checkbox" name="basket" id="filter-basket">
-            <label for="filter-basket">Корзина</label>
-          </li>
-        </ul>
-      </fieldset>
-      <button class="filter-button" type="submit">Показать</button>
-    </form>
-    <section class="catalog">
-      <h2 class="visually-hidden">Сортировка коталога</h2>
-      <ul class="sorting-item">
-        <li class="sorting-heading">СОРТИРОВАТЬ:</li>
-        <li class="sorting-active">По цене</li>
-        <li class="sorting-not-active">По типу</li>
-        <li class="sorting-not-active">По названию</li>
-      </ul>
-      <ul class="catalog-item">
-        <li><img src="img/catalog-sedona.jpg" width="360" height="576"
-            alt="Демонстрация сайта «Седона» с пейзажами гор, коньенов и домов"></li>
-        <li><img src="img/catalog-pink.jpg" width="360" height="576"
-            alt="Демонстрация приложения «Пинк» розового цвета на темном фоне и обзор приложения на смартфоне"></li>
-        </li>
-        <li><img src="img/catalog-barbershop.jpg" width="360" height="576"
-            alt="Демонстрация барбершопа «Бородинский» темного цвета с ценами и статистикой"></li>
-        </li>
-        <li><img src="img/catalog-mishka.jpg" width="360" height="576"
-            alt="Демонстрация сайта «Мишка» с мягкими и разноцветными игрушками на белом фоне"></li>
-        </li>
-        <li><img src="img/catalog-aplus.jpg" width="360" height="576"
-            alt="Демонстрация онлайн-школы «Аплус» с основной информацией об обучении и синем фоном"></li>
-        </li>
-        <li><img src="img/catalog-kvast.jpg" width="360" height="576"
-            alt="Демонстрация сайта «Квас» с примерами кваса и пшеничным фоном"></li>
-        </li>
-      </ul>
-    </section>
 
-    </main>
+      <h1 class="header-catalog">Магазин готовых шаблонов</h1>
+    </div>
   </div>
+
+  <div class="container">
+    <main>
+      <h2 class="visually-hidden">Каталог</h2>
+      <div class="all-catalog">
+        <form class="form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend>Сетка</legend>
+            <ul class="filter-list">
+              <li>
+                <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="Fixed" id="filter-Fixed">
+                <label for="filter-Fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend>ОСОБЕННОСТИ:</legend>
+            <ul class="filter-list">
+              <li>
+                <input type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="benefits-block" id="filter-benefits-block">
+                <label for="filter-benefits-block">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-button" type="submit">Показать</button>
+        </form>
+        <section class="catalog">
+          <h2 class="visually-hidden">Сортировка коталога</h2>
+          <ul class="sorting-list">
+            <li class="sorting-heading">СОРТИРОВАТЬ:</li>
+            <li class="sorting-active"><a href="#">По цене</a></li>
+            <li class="sorting-not-active"><a href="#">По типу</a></li>
+            <li class="sorting-not-active"><a href="#">По названию</a></li>
+            <li>
+              <a class="sorting-arrow-black" href="#"><img src="img/icons/icon-down-dir.png" width="11" height="10"
+                  alt="Стрелочка вниз для выбора сортировки черного цвета"></a>
+              <a href="#"><img src="img/icons/icon-up-dir.png" width="11" height="10"
+                  alt="Стрелочка вверх для выбора сортировки серого цвета"></a>
+            </li>
+          </ul>
+          <ul class="catalog-list">
+            <li class="browser-white browser-black">
+              <img src="img/catalog-sedona.jpg" width="360" height="576"
+                alt="Демонстрация сайта «Седона» с пейзажами гор, коньенов и домов">
+              <div class="popup-sedona">
+                <p class="popup-sedona-heading">SEDONA</p>
+                <p class="popup-sedona-info">Информационный сайт для туристов</p>
+                <a class="popup-sedona-button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="browser-white"><img src="img/catalog-pink.jpg" width="360" height="576"
+                alt="Демонстрация приложения «Пинк» розового цвета на темном фоне и обзор приложения на смартфоне"></li>
+            </li>
+            <li class="browser-white"><img src="img/catalog-barbershop.jpg" width="360" height="576"
+                alt="Демонстрация барбершопа «Бородинский» темного цвета с ценами и статистикой"></li>
+            </li>
+            <li class="browser-white"><img src="img/catalog-mishka.jpg" width="360" height="576"
+                alt="Демонстрация сайта «Мишка» с мягкими и разноцветными игрушками на белом фоне"></li>
+            </li>
+            <li class="browser-white"><img src="img/catalog-aplus.jpg" width="360" height="576"
+                alt="Демонстрация онлайн-школы «Аплус» с основной информацией об обучении и синем фоном"></li>
+            </li>
+            <li class="browser-white"><img src="img/catalog-kvast.jpg" width="360" height="576"
+                alt="Демонстрация сайта «Квас» с примерами кваса и пшеничным фоном"></li>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item-active"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-button"><a href="#">Следующая</a></li>
+          </ul>
+        </section>
+      </div>
+  </div>
+  <h2 class="visually-hidden">Карта</h2>
+  <div class="map">
+    <iframe class="card-size"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037865308363!2d30.321773887300164!3d59.93871649386396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572515038831!5m2!1sru!2sru"
+      frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <section class="adress-block">
+      <h3 class="visually-hidden">Общая информация</h3>
+      <p class="adress-block-heading">NЁRDS DESIGN STUDIO</p>
+      <p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <span class="phone">тел. +7 (812) 275-75-75</span></p>
+      <a class="adress-block-button" href="#">напешите нам</a>
+    </section>
+  </div>
+  <div class="container">
+    <footer class="footer">
+      <ul class="footer-link">
+        <li class="social-icon social-icon-vk"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li class="social-icon social-icon-fb"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="social-icon social-icon-inst"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+      </ul>
+      <article class="discount">
+        <h2 class="visually-hidden">Скидка для социальных сетей</h2>
+        <p class="discount-heading">Давайте дружить, это выгодно!</p>
+        <p class="discount-text">Скидка 10% для друзей из социальных сетей.</p>
+      </article>
+    </footer>
+  </div>
+  <section class="popup">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <p class="popup-heading">Напишите нам</p>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p class="popup-name">
+        <label class="your-name" for="name">Ваше имя:</label>
+        <input class="popup-name-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="popup-email">
+        <label class="your-email" for="email">Ваш e-mail:</label>
+        <input class="popup-email-input" id="email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="popup-message">
+        <label class="your-message" for="message">Текст письма:</label>
+        <input class="popup-message-input" id="message" name="message" placeholder="В свободной форме"></input>
+      </p>
+      <button class="popup-submit" type="submit">Отправить</button>
+    </form>
+  </section>
+
+  </main>
+
 </body>
