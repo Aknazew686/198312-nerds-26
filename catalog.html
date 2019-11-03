@@ -57,43 +57,43 @@
           </fieldset>
           <fieldset class="filter-item">
             <legend>Сетка</legend>
-            <ul class="filter-list">
+            <ul class="filter-list radio">
               <li>
-                <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
+                <input class="visually-hidden" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                <label class="label-radio" for="filter-adaptive">Адаптивная</label>
               </li>
               <li>
-                <input type="radio" name="grid" value="Fixed" id="filter-Fixed">
-                <label for="filter-Fixed">Фиксированная</label>
+                <input class="visually-hidden" type="radio" name="grid" value="Fixed" id="filter-Fixed">
+                <label class="label-radio" for="filter-Fixed">Фиксированная</label>
               </li>
               <li>
-                <input type="radio" name="grid" value="rubber" id="filter-rubber">
-                <label for="filter-rubber">Резиновая</label>
+                <input class="visually-hidden" type="radio" name="grid" value="rubber" id="filter-rubber">
+                <label class="label-radio" for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-item">
             <legend>ОСОБЕННОСТИ:</legend>
-            <ul class="filter-list">
+            <ul class="filter-list checkbox">
               <li>
-                <input type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
+                <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
+                <label class="label-checkbox" for="filter-slider">Слайдер</label>
               </li>
               <li>
-                <input type="checkbox" name="benefits-block" id="filter-benefits-block">
-                <label for="filter-benefits-block">Блок преимуществ</label>
+                <input class="visually-hidden" type="checkbox" name="benefits-block" id="filter-benefits-block">
+                <label class="label-checkbox" for="filter-benefits-block">Блок преимуществ</label>
               </li>
               <li>
-                <input type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
+                <input class="visually-hidden" type="checkbox" name="news" id="filter-news" checked>
+                <label class="label-checkbox" for="filter-news">Новости</label>
               </li>
               <li>
-                <input type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
+                <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
+                <label class="label-checkbox" for="filter-gallery">Галерея</label>
               </li>
               <li>
-                <input type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
+                <input class="visually-hidden" type="checkbox" name="basket" id="filter-basket">
+                <label class="label-checkbox" for="filter-basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -117,26 +117,51 @@
             <li class="browser-white browser-black">
               <img src="img/catalog-sedona.jpg" width="360" height="576"
                 alt="Демонстрация сайта «Седона» с пейзажами гор, коньенов и домов">
-              <div class="popup-sedona">
-                <p class="popup-sedona-heading">SEDONA</p>
-                <p class="popup-sedona-info">Информационный сайт для туристов</p>
-                <a class="popup-sedona-button" href="#">9 900 руб.</a>
+              <div class="catalog-list-popup">
+                <p class="catalog-popup-heading">SEDONA</p>
+                <p class="catalog-popup sedona-info">Информационный сайт для туристов</p>
+                <a class="catalog-popup-button" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="browser-white"><img src="img/catalog-pink.jpg" width="360" height="576"
-                alt="Демонстрация приложения «Пинк» розового цвета на темном фоне и обзор приложения на смартфоне"></li>
+            <li class="browser-white browser-black""><img src="img/catalog-pink.jpg" width="360" height="576"
+                alt="Демонстрация приложения «Пинк» розового цвета на темном фоне и обзор приложения на смартфоне">
+                <div class="catalog-list-popup">
+                  <p class="catalog-popup-heading">Pink App</p>
+                  <p class="catalog-popup pink-info">Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="catalog-popup-button" href="#">9 900 руб.</a>
+                </div>
             </li>
-            <li class="browser-white"><img src="img/catalog-barbershop.jpg" width="360" height="576"
-                alt="Демонстрация барбершопа «Бородинский» темного цвета с ценами и статистикой"></li>
+            <li class="browser-white browser-black"><img src="img/catalog-barbershop.jpg" width="360" height="576"
+                alt="Демонстрация барбершопа «Бородинский» темного цвета с ценами и статистикой">
+                <div class="catalog-list-popup">
+                  <p class="catalog-popup-heading">Barbershop</p>
+                  <p class="catalog-popup barbershop-info">Сайт салона красоты. Для мужчин, да.</p>
+                  <a class="catalog-popup-button" href="#">9 900 руб.</a>
+                </div>
             </li>
-            <li class="browser-white"><img src="img/catalog-mishka.jpg" width="360" height="576"
-                alt="Демонстрация сайта «Мишка» с мягкими и разноцветными игрушками на белом фоне"></li>
+            <li class="browser-white browser-black"><img src="img/catalog-mishka.jpg" width="360" height="576"
+                alt="Демонстрация сайта «Мишка» с мягкими и разноцветными игрушками на белом фоне">
+                <div class="catalog-list-popup">
+                  <p class="catalog-popup-heading">MISHKA</p>
+                  <p class="catalog-popup mishka-info">Интернет-магазин вязаных игрушек</p>
+                  <a class="catalog-popup-button" href="#">9 900 руб.</a>
+                </div>
             </li>
-            <li class="browser-white"><img src="img/catalog-aplus.jpg" width="360" height="576"
-                alt="Демонстрация онлайн-школы «Аплус» с основной информацией об обучении и синем фоном"></li>
+            <li class="browser-white browser-black"><img src="img/catalog-aplus.jpg" width="360" height="576"
+                alt="Демонстрация онлайн-школы «Аплус» с основной информацией об обучении и синем фоном">
+                <div class="catalog-list-popup">
+                  <p class="catalog-popup-heading">A PLUS</p>
+                  <p class="catalog-popup aplus-info">Лендинг курсов повышения квалификации</p>
+                  <a class="catalog-popup-button" href="#">9 900 руб.</a>
+                </div>
             </li>
-            <li class="browser-white"><img src="img/catalog-kvast.jpg" width="360" height="576"
-                alt="Демонстрация сайта «Квас» с примерами кваса и пшеничным фоном"></li>
+            <li class="browser-white browser-black"><img src="img/catalog-kvast.jpg" width="360" height="576"
+                alt="Демонстрация сайта «Квас» с примерами кваса и пшеничным фоном">
+                <div class="catalog-list-popup">
+                  <p class="catalog-popup-heading">КВАСТ</p>
+                  <p class="catalog-popup kvas-info">Промо-сайт производителя крафтового кваса</p>
+                  <a class="catalog-popup-button" href="#">9 900 руб.</a>
+                </div>
             </li>
           </ul>
           <ul class="pagination-list">
@@ -150,17 +175,20 @@
   </div>
   <h2 class="visually-hidden">Карта</h2>
   <div class="map">
-    <iframe class="card-size"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037865308363!2d30.321773887300164!3d59.93871649386396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572515038831!5m2!1sru!2sru"
-      frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    <section class="adress-block">
-      <h3 class="visually-hidden">Общая информация</h3>
-      <p class="adress-block-heading">NЁRDS DESIGN STUDIO</p>
-      <p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        <span class="phone">тел. +7 (812) 275-75-75</span></p>
-      <a class="adress-block-button" href="#">напешите нам</a>
-    </section>
-  </div>
+      <div class="container map-relative">
+          <section class="adress-block">
+              <h3 class="visually-hidden">Общая информация</h3>
+              <p class="adress-block-heading">NЁRDS DESIGN STUDIO</p>
+              <p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                <span class="phone">тел. +7 (812) 275-75-75</span></p>
+              <a class="adress-block-button" href="#">напешите нам</a>
+            </section>
+      </div>
+      <iframe class="card-size"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037865308363!2d30.321773887300164!3d59.93871649386396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572515038831!5m2!1sru!2sru"
+        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      
+    </div>
   <div class="container">
     <footer class="footer">
       <ul class="footer-link">
