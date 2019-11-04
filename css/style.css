@@ -157,7 +157,7 @@ img {
 .slider-controls i.active::after {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 5px;
   left: 5px;
   z-index: 1;
 
