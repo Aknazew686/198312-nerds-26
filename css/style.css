@@ -264,7 +264,7 @@ img {
   
   margin: 0;
   padding: 0;
-  margin-top: 80px;
+  margin-top: 77px;
   margin-bottom: 80px;
   list-style: none;
 }
@@ -375,10 +375,8 @@ img {
 }
 
 .statistics-wrapper {
-  display: flex;
-    width: 360px;
-    flex-wrap: wrap;
-    margin-top: 40px;
+  width: 360px;
+  margin-top: 42px;
 }
 
 .basic-information-wrapper {
@@ -393,8 +391,9 @@ img {
 }
 
 .statistics-header {
+  display: block;
   margin-left: 17px;
-  margin-top: 35px;
+  margin-top: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
@@ -409,11 +408,16 @@ img {
 
   margin: 0;
   padding: 0;
-  margin-top: 61px;
+  margin-top: 39px;
   list-style: none;
 }
 
-.procents {
+.procents::after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 50px;
   font-size: 27px;
 }
 
@@ -421,15 +425,16 @@ img {
   display: flex;
   width: 98px;
   flex-wrap: wrap;
-  padding-bottom: 37px;
+  margin-bottom: 17px;
   font-size: 45px;
   font-weight: 700;
-  line-height: 0.22;
+  line-height: 50px;
   color: #000000;
 }
 
 .statistics-item {
   width: 93px;
+  position: relative;
 }
 
 .service-info-header {
