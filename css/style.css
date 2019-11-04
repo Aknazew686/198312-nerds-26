@@ -114,7 +114,7 @@ img {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 104px;
+  bottom: 96px;
   z-index: 100;
   
   width: 160px;
@@ -130,17 +130,21 @@ img {
   display: inline-block;
   width: 18px;
   height: 18px;
-  padding: 8px;
+  margin-right: 15px;
 
   border-radius: 50%;
   cursor: pointer;
 }
 
+.slider-controls i:last-child {
+  margin-right: 0;
+}
+
 .slider-controls i::after {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 0;
+  left: 2px;
   z-index: 1;
 
   width: 18px;
@@ -148,6 +152,21 @@ img {
   
   background: #ffffff;
   border-radius: 50%;
+}
+
+.slider-controls i.active::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  z-index: 1;
+
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #dbdbdb;
 }
 
 .slider-list {
@@ -264,7 +283,7 @@ img {
   
   margin: 0;
   padding: 0;
-  margin-top: 77px;
+  margin-top: 80px;
   margin-bottom: 80px;
   list-style: none;
 }
@@ -376,11 +395,11 @@ img {
 
 .statistics-wrapper {
   width: 360px;
-  margin-top: 42px;
+  margin-top: 39px;
 }
 
 .basic-information-wrapper {
-  margin-top: 77px;
+  margin-top: 74px;
 }
 
 .service-info {
@@ -412,11 +431,9 @@ img {
   list-style: none;
 }
 
-.procents::after {
-  position: absolute;
-  font-size: 21px;
-  top: 0;
-  left: 78px;
+.procents {
+  font-size: 27px;
+  line-height: 33px;
 }
 
 .statistics-procents {
@@ -692,7 +709,7 @@ img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 545px;
+  width: 645px;
   margin-left: 139px;
 }
 
@@ -705,19 +722,6 @@ img {
   width: 960px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   display: none;
-}
-
-.popup::after {
-  content: '';
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  top: 50%;
-  left: 50%;
-  background-image: url('../img/close-cross.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  cursor: pointer;
 }
 
 .popup::after {
@@ -830,6 +834,7 @@ img {
   background-color: #fb565a;
   border-radius: 5px;
   border: none;
+  text-transform: uppercase;
 }
 
 .popup form{
@@ -894,7 +899,7 @@ img {
 }
 
 .range {
-  margin-bottom: 61px;
+  margin-bottom: 59px;
 }
 
 .grid {
@@ -904,8 +909,8 @@ img {
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
-  padding-top: 39px;
+  margin-bottom: 16px;
+  padding-top: 42px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
@@ -1085,7 +1090,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 49px;
+  
 }
 
 .sorting-list li {
@@ -1130,6 +1135,7 @@ img {
 
 .all-sorting {
   display: flex;
+  margin-bottom: 51px;
 }
 
 .catalog-list {
@@ -1174,9 +1180,8 @@ img {
 }
 
 .active {
+
   background-color: #ffffff;
-  
-  border: solid 3px #dbdbdb;
 }
 
 .pagination-button {
@@ -1219,9 +1224,9 @@ img {
 
 .catalog-list-popup {
   position: absolute;
-  top: 385px;
+  bottom: 0;
   left: 0;
-  padding-bottom: 29px;
+  padding-bottom: 49px;
   text-align: center;
   width: 360px;
   background-color: #eeeeee;
@@ -1231,8 +1236,8 @@ img {
 .catalog-popup-heading {
   margin: 0;
   padding: 0;
-  padding-top: 35px;
-  padding-bottom: 25px;
+  padding-top: 28px;
+  padding-bottom: 15px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.67;
@@ -1240,11 +1245,10 @@ img {
 }
 
 
-
 .sedona-info {
   margin: 0;
   padding: 0;
-  margin: 0 auto 20px;
+  margin: 0 auto 31px;
   
   width: 200px;
   line-height: 1.13;
@@ -1304,11 +1308,11 @@ img {
 .catalog-popup-button {
   font-weight: 500;
   line-height: 1.13;
-
+  text-transform: uppercase;
   display: inline-block;
-  padding: 19px 60px;
+  padding: 16px 62px;
   
-  border-radius: 5px;
+  border-radius: 3px;
   color: #ffffff;
   background-color: #fb565a;
 }
@@ -1319,7 +1323,7 @@ img {
 
 .all-catalog {
   display: flex;
-  margin-top: 60px;
+  margin-top: 57px;
 }
 
 .catalog {
@@ -1335,4 +1339,21 @@ img {
   border: solid 3px #dbdbdb;
   padding: 13px 18px;
   cursor: default;
+}
+
+.close {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 97px;
+  right: 100px;
+  opacity: 0.3;
+  background-image: url('../img/close-cross.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  font-size: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }

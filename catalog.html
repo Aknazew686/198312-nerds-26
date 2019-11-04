@@ -102,21 +102,33 @@
         <section class="catalog">
           <h2 class="visually-hidden">Сортировка коталога</h2>
           <div class="all-sorting">
-          <strong class="sorting-heading">СОРТИРОВАТЬ:</strong>
-          <div class="sorting-wrapper">
-            <ul class="sorting-list">
-              <li class="sorting-active"><a href="#">По цене</a></li>
-              <li class="sorting-not-active"><a href="#">По типу</a></li>
-              <li class="sorting-not-active"><a href="#">По названию</a></li>
-            </ul>
-            <ul class="sorting-control">
-              <li><a class="sorting-arrow-black" href="#"><img src="img/icons/icon-down-dir.png" width="11" height="10"
-                    alt="Стрелочка вниз для выбора сортировки черного цвета"></a></li>
-              <li><a href="#"><img src="img/icons/icon-up-dir.svg" width="11" height="10"
-                    alt="Стрелочка вверх для выбора сортировки серого цвета"></a></li>
-            </ul>
+            <strong class="sorting-heading">СОРТИРОВАТЬ:</strong>
+            <div class="sorting-wrapper">
+              <ul class="sorting-list">
+                <li class="sorting-active"><a href="#">По цене</a></li>
+                <li class="sorting-not-active"><a href="#">По типу</a></li>
+                <li class="sorting-not-active"><a href="#">По названию</a></li>
+              </ul>
+              <ul class="sorting-control">
+                <li>
+                  <a class="sorting-arrow-black" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                      <path fill="#231F20" d="M5.5 10L0 0h11" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px"
+                      viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                      <polygon fill="#a7a8a8" points="5.5,0 0,10 11,10 " />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
           <ul class="catalog-list">
             <li class="browser-white browser-black">
               <img src="img/catalog-sedona.jpg" width="360" height="576"
@@ -208,6 +220,7 @@
     </footer>
   </div>
   <section class="popup">
+    <button class="close" type="button">close</button>
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <p class="popup-heading">Напишите нам</p>
     <form action="https://echo.htmlacademy.ru" method="post">
