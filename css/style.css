@@ -380,7 +380,7 @@ img {
 }
 
 .basic-information-wrapper {
-  margin-top: 74px;
+  margin-top: 77px;
 }
 
 .service-info {
@@ -414,16 +414,14 @@ img {
 
 .procents::after {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  font-size: 21px;
   top: 0;
-  left: 50px;
-  font-size: 27px;
+  left: 78px;
 }
 
 .statistics-procents {
   display: flex;
-  width: 98px;
+  width: 111px;
   flex-wrap: wrap;
   margin-bottom: 17px;
   font-size: 45px;
@@ -434,7 +432,6 @@ img {
 
 .statistics-item {
   width: 93px;
-  position: relative;
 }
 
 .service-info-header {
