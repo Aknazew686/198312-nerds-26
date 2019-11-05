@@ -197,6 +197,7 @@ img {
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
+
 .slider-item:nth-child(2) {
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
@@ -378,8 +379,6 @@ img {
   color: #ffffff;
 }
 
-
-
 .basic-information {
   display: flex;
   flex-wrap: wrap;
@@ -388,8 +387,6 @@ img {
 
   border-top: 2px solid #efefef;
 }
-
-
 
 .basic-information-heading {
   width: 650px;
@@ -493,7 +490,6 @@ img {
   height: 1px;
 
   background: #fb565a;
-;
   transform: translateY(-50%);
 }
 
@@ -631,7 +627,6 @@ img {
   font-weight: 500;
   line-height: 1.13;
   color: #ffffff;
-;
   text-transform: uppercase;
 
   background-color: #fb565a;
@@ -929,8 +924,6 @@ img {
 
   border: none;
 }
-
-
 
 .range-filter {
   width: 260px;
@@ -1325,7 +1318,6 @@ img {
   line-height: 1.67;
   color: #000000;
 }
-
 
 .sedona-info {
   width: 200px;
